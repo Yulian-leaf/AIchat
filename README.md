@@ -1,5 +1,5 @@
 # AI 伴侣（基础聊天）MVP
-
+这个项目是一个“网页端 AI 伴侣聊天”MVP：前端用纯 HTML/CSS/JS 提供最小聊天界面与系统提示词输入，后端用 Python Flask 同时托管页面并提供 HTTP 接口（/api/chat、/api/session、/api/config、/api/health）以及 WebSocket 实时通道，默认优先走 WS 的增量流式协议（assistant_delta）实现逐字输出、失败则回退到 HTTP；服务端支持可切换的 AI Provider（占位回显或 Deepseek/OpenAI 兼容接口）、会话上下文记忆与 SQLite 持久化存储（sessions/messages/system_prompt），并对 Windows 环境做了兼容与端口占用自动换端口处理，从而跑通“打开网页—发消息—流式回复—历史可回放”的闭环。
 目标：用最小技术栈跑通“网页聊天”闭环。
 
 - 前端：纯 HTML + CSS + JS
