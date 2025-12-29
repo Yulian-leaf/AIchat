@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI 伴侣（MVP 聊天）</title>
+  <link rel="stylesheet" href="/assets/styles.css" />
+</head>
+
+<body>
+  <main class="app">
+    <header class="header">
+      <h1 class="title">AI 伴侣</h1>
+    </header>
+
+    <section class="prompt" aria-label="系统提示词">
+      <label class="prompt__label" for="systemPrompt">角色设定 / 系统提示词</label>
+      <textarea id="systemPrompt" class="prompt__input" rows="3" placeholder="例如：你是一个友好、可靠的 AI 伴侣。回答要简洁、清晰。"></textarea>
+    </section>
+
+    <section id="messages" class="messages" aria-label="聊天消息"></section>
+
+    <form id="composer" class="composer" autocomplete="off">
+      <input id="input" class="input" type="text" placeholder="输入消息..." maxlength="2000" aria-label="输入消息" />
+      <button id="send" class="send" type="submit">发送</button>
+    </form>
+  </main>
+
+  <script src="/assets/app.js" defer></script>
+</body>
+
+</html>

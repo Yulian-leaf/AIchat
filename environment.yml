@@ -1,0 +1,12 @@
+name: ai-companion-chat
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - flask>=3.0
+  - pip
+  - pip:
+      - flask-sock>=0.7
+  - requests>=2.31
+      - python-dotenv>=1.0
+      - websockets>=12.0

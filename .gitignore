@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+*.pyo
+*.egg-info/
+.venv/
+
+# Conda
+.conda/
+
+# VS Code
+.vscode/*.log
+
+# Secrets
+.env
+
+# OS
+.DS_Store
+Thumbs.db
