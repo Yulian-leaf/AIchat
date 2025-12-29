@@ -4,7 +4,7 @@
 
 - 前端：纯 HTML + CSS + JS
 - 后端：Python Flask（HTTP + WebSocket）
-- AI 回复：先用占位回显（后续可替换成 Deepseek/OpenAI）
+- AI 回复：Deepseek api
 
 ## 1) 创建 conda 环境
 
